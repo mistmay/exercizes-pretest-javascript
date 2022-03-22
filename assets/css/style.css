@@ -1,0 +1,133 @@
+header {
+    z-index: 2;
+    height: 73px;
+}
+
+#nav-left h1 {
+    font-size: 25px;
+}
+
+#nav-left ul {
+    list-style: none;
+    font-size: 18px;
+}
+
+#nav-left a,
+aside a {
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+#nav-left a:hover,
+aside a:hover {
+    opacity: 0.8;
+}
+
+.dropdown {
+    cursor: pointer;
+}
+
+.dropdown:hover {
+    opacity: 0.8;
+}
+
+#nav-right input,
+aside input {
+    padding: 10px 15px;
+    border-radius: 10px;
+    font-size: 16px;
+}
+
+#nav-right input {
+    width: 200px;
+}
+
+aside input {
+    width: calc(100% - 66px - 0.5rem);
+}
+
+#nav-right button,
+aside button {
+    width: 66px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 1px solid rgba(30, 135, 83, 255);
+    font-size: 16px;
+    color: rgba(30, 135, 83, 255);
+    cursor: pointer;
+}
+
+#nav-right button:hover,
+aside button:hover {
+    opacity: 0.8;
+}
+
+#hamburger {
+    border: 1px solid white;
+    border-radius: 10px;
+    cursor: pointer;
+    padding: 10px;
+}
+
+#hamburger:hover {
+    border: 3px solid white;
+}
+
+aside {
+    transition: 0.2s ease;
+    display: none;
+    top: 73px;
+    height: 182px;
+    z-index: 2;
+    overflow: hidden;
+}
+
+.visible-aside {
+    display: flex;
+}
+
+main {
+    margin-top: 73px;
+}
+
+.margin-top-toogle {
+    margin-top: calc(73px + 182px);
+}
+
+main>section {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 30px;
+    border-radius: 20px;
+    border: 1px solid black;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+main button {
+    color: white;
+    background-color: red;
+    border: none;
+    padding: 15px;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+main button:hover {
+    opacity: 0.8;
+}
+
+#cat-container>img {
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+}
+
+#bomb {
+    display: none;
+}
